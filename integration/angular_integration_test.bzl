@@ -141,7 +141,7 @@ def _angular_integration_test(name, **kwargs):
             # as chrome (which is run by ng) that require access to files outside of the sandbox.
             "no-sandbox",
             # Remote doesn't work as it needs network access right now
-            "no-remote-exec",
+            #"no-remote-exec",
         ],
         data = kwargs.pop("data", []) + data,
         # 15-minute timeout
